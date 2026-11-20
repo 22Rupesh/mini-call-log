@@ -1,0 +1,303 @@
+2026-10-24 00:53:55.824 | INFO     | pipecat:<module>:54 - \u14da\u160f\u15e2 Pipecat 1.13.0 (Python 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]) \u14da\u160f\u15e2
+2026-10-24 00:53:57.817 | DEBUG    | pipecat.transports.smallwebrtc.connection:<module>:80 - [SCTP] USERDATA_MAX_LENGTH set to 1100
+INFO:     Started server process [24196]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.02026-10-24 00:55:11.215 | DEBUG    | pipecat.transports.smallwebrtc.connection:_initialize:332 - Initializing new peer connection
+2026-10-24 00:55:12.279 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:429 - Creating answer
+2026-10-24 00:55:12.282 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_track:411 - Track audio received
+2026-10-24 00:55:12.317 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is gathering
+2026-10-24 00:55:12.324 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is complete
+2026-10-24 00:55:12.325 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:432 - Setting the answer after the local description is created
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:63: DeprecationWarning: `GroqLLMService(model=...)` is deprecated since 0.0.105 and will be removed in 2.0.0. Use `settings=GroqLLMService.Settings(model=...)` instead. If both are provided, `settings` takes precedence.
+  llm = GroqLLMService(
+2026-10-24 00:55:13.910 | DEBUG    | pipecat.services.groq.llm:create_client:104 - Creating Groq client with api https://api.groq.com/openai/v1
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:67: DeprecationWarning: `CartesiaTTSService(voice_id=...)` is deprecated since 0.0.105 and will be removed in 2.0.0. Use `settings=CartesiaTTSService.Settings(voice=...)` instead. If both are provided, `settings` takes precedence.
+  tts = CartesiaTTSService(
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:67: DeprecationWarning: `CartesiaTTSService(model=...)` is deprecated since 0.0.105 and will be removed in 2.0.0. Use `settings=CartesiaTTSService.Settings(model=...)` instead. If both are provided, `settings` takes precedence.
+  tts = CartesiaTTSService(
+2026-10-24 00:55:15.146 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#0::Source -> SmallWebRTCInputTransport#0
+2026-10-24 00:55:15.147 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCInputTransport#0 -> DeepgramSTTService#0
+2026-10-24 00:55:15.147 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking DeepgramSTTService#0 -> GroqLLMService#0
+2026-10-24 00:55:15.148 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking GroqLLMService#0 -> CartesiaTTSService#0
+2026-10-24 00:55:15.148 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking CartesiaTTSService#0 -> SmallWebRTCOutputTransport#0
+2026-10-24 00:55:15.149 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCOutputTransport#0 -> Pipeline#0::Sink
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:75: DeprecationWarning: `PipelineTask` is deprecated since 1.3.0 and will be removed in 2.0.0. Use `PipelineWorker` instead.
+  task = PipelineTask(
+2026-10-24 00:55:15.151 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking PipelineTask#0::Source -> RTVIProcessor#0
+2026-10-24 00:55:15.151 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking RTVIProcessor#0 -> Pipeline#0
+2026-10-24 00:55:15.151 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#0 -> PipelineTask#0::Sink
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:82: DeprecationWarning: `PipelineRunner` is deprecated since 1.3.0 and will be removed in 2.0.0. Use `WorkerRunner` instead.
+  runner = PipelineRunner()
+2026-10-24 00:55:15.152 | WARNING  | pipecat.utils.base_object:add_event_handler:209 - PipelineTask#0: event handler on_stop_task not registered
+2026-10-24 00:55:15.153 | DEBUG    | pipecat.transports.smallwebrtc.request_handler:handle_web_request:218 - webrtc_connection_callback executed successfully for peer: SmallWebRTCConnection#0-2136cb9d74394af287b2539dd5db1e04
+C:\Python313\Lib\asyncio\events.py:89: DeprecationWarning: `WorkerRunner.run(worker)` is deprecated since 1.3.0 and will be removed in 2.0.0. Use `WorkerRunner.add_workers()` before `run()` instead.
+  self._context.run(self._callback, *self._args)
+2026-10-24 00:55:15.157 | DEBUG    | pipecat.workers.runner:run:273 - WorkerRunner 'runner-797e209a': started running
+2026-10-24 00:55:15.158 | DEBUG    | pipecat.workers.runner:add_workers:230 - WorkerRunner 'runner-797e209a': added worker 'PipelineTask#0'
+2026-10-24 00:55:15.159 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is checking, connection is connecting
+2026-10-24 00:55:15.160 | DEBUG    | pipecat.transports.smallwebrtc.connection:_monitoring_connecting_state:607 - Monitoring connecting state
+2026-10-24 00:55:15.160 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connecting
+2026-10-24 00:55:15.161 | DEBUG    | pipecat.workers.runner:_start_worker:459 - WorkerRunner 'runner-797e209a': starting worker 'PipelineTask#0'
+2026-10-24 00:55:15.166 | INFO     | pipecat.transports.smallwebrtc.transport:connect:544 - Connecting to Small WebRTC
+2026-10-24 00:55:15.166 | DEBUG    | pipecat.services.deepgram.stt:_connect:630 - Connecting to Deepgram
+2026-10-24 00:55:15.167 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 00:55:15.170 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1309 - PipelineTask#0: Starting. Waiting for StartFrame#0 to reach the end of the pipeline...
+2026-10-24 00:55:15.390 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is completed, connection is connecting
+2026-10-24 00:55:15.495 | DEBUG    | pipecat.transports.smallwebrtc.connection:_cancel_monitoring_connecting_state:627 - Cancelling the connecting timeout task
+2026-10-24 00:55:15.496 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connected
+2026-10-24 00:55:15.497 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_connected:270 - Peer connection established.
+2026-10-24 00:55:15.497 | WARNING  | pipecat.transports.smallwebrtc.connection:video_input_track:746 - No video transceiver is available
+2026-10-24 00:55:15.498 | WARNING  | pipecat.transports.smallwebrtc.connection:screen_video_input_track:768 - No screen video transceiver is available
+2026-10-24 00:55:15.499 | DEBUG    | pipecat.transports.smallwebrtc.connection:replace_audio_track:522 - Replacing audio track audio
+2026-10-24 00:55:16.624 | DEBUG    | pipecat.services.deepgram.stt:_connection_handler:677 - DeepgramSTTService#0: Websocket connection initialized
+2026-10-24 00:55:16.701 | DEBUG    | pipecat.registry.registry:register:132 - Worker 'PipelineTask#0' ready (local)
+2026-10-24 00:55:16.702 | DEBUG    | pipecat.workers.runner:_send_registry:511 - WorkerRunner 'runner-797e209a': broadcasting registry: ['PipelineTask#0']
+2026-10-24 00:55:16.703 | DEBUG    | pipecat.workers.base_worker:_maybe_activate:1284 - Worker 'PipelineTask#0': activated
+2026-10-24 00:55:16.704 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1326 - PipelineTask#0: StartFrame#0 reached the end of the pipeline, pipeline is now ready.
+2026-10-24 00:55:16.724 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:17.512 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:17.513 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:17.682 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:17.683 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:22.358 | WARNING  | pipecat.transports.smallwebrtc.transport:read_audio_frame:453 - Media stream error while reading the audio; clearing track.
+2026-10-24 00:55:22.359 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_ended:416 - Track audio ended
+2026-10-24 00:55:22.363 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is closed, connection is closed
+2026-10-24 00:55:22.370 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: closed
+2026-10-24 00:55:22.372 | INFO     | pipecat.transports.smallwebrtc.request_handler:handle_disconnected:212 - Discarding peer connection for pc_id: SmallWebRTCConnection#0-2136cb9d74394af287b2539dd5db1e04
+2026-10-24 00:55:22.372 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_closed:280 - Client connection closed.
+2026-10-24 00:55:25.507 | WARNING  | pipecat.transports.smallwebrtc.connection:timeout_handler:648 - Data channel not established within 10s after connection. Clearing message queue and disabling future queueing.
+2026-10-24 00:55:25.523 | DEBUG    | pipecat.transports.smallwebrtc.connection:_idle_watcher:224 - Disabling receiver for audio track after 3.17s idle
+2026-10-24 00:55:25.524 | DEBUG    | pipecat.transports.smallwebrtc.connection:discard_old_frames:193 - Discarding old frames
+2026-10-24 00:55:25.896 | DEBUG    | pipecat.transports.smallwebrtc.connection:_initialize:332 - Initializing new peer connection
+2026-10-24 00:55:25.902 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:429 - Creating answer
+2026-10-24 00:55:25.905 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_track:411 - Track audio received
+2026-10-24 00:55:25.929 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is gathering
+2026-10-24 00:55:25.931 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is complete
+2026-10-24 00:55:25.932 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:432 - Setting the answer after the local description is created
+2026-10-24 00:55:27.544 | DEBUG    | pipecat.services.groq.llm:create_client:104 - Creating Groq client with api https://api.groq.com/openai/v1
+2026-10-24 00:55:28.805 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#2::Source -> SmallWebRTCInputTransport#1
+2026-10-24 00:55:28.806 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCInputTransport#1 -> DeepgramSTTService#1
+2026-10-24 00:55:28.807 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking DeepgramSTTService#1 -> GroqLLMService#1
+2026-10-24 00:55:28.807 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking GroqLLMService#1 -> CartesiaTTSService#1
+2026-10-24 00:55:28.808 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking CartesiaTTSService#1 -> SmallWebRTCOutputTransport#1
+2026-10-24 00:55:28.808 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCOutputTransport#1 -> Pipeline#2::Sink
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:75: DeprecationWarning: `PipelineTask` is deprecated since 1.3.0 and will be removed in 2.0.0. Use `PipelineWorker` instead.
+  task = PipelineTask(
+2026-10-24 00:55:28.810 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking PipelineTask#1::Source -> RTVIProcessor#1
+2026-10-24 00:55:28.810 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking RTVIProcessor#1 -> Pipeline#2
+2026-10-24 00:55:28.811 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#2 -> PipelineTask#1::Sink
+C:\Users\DELL\Desktop\Vaami\mini-call-log\packages\bot\main.py:82: DeprecationWarning: `PipelineRunner` is deprecated since 1.3.0 and will be removed in 2.0.0. Use `WorkerRunner` instead.
+  runner = PipelineRunner()
+2026-10-24 00:55:28.812 | WARNING  | pipecat.utils.base_object:add_event_handler:209 - PipelineTask#1: event handler on_stop_task not registered
+2026-10-24 00:55:28.812 | DEBUG    | pipecat.transports.smallwebrtc.request_handler:handle_web_request:218 - webrtc_connection_callback executed successfully for peer: SmallWebRTCConnection#1-d6b6c94630b842ad872fc37285c51153
+2026-10-24 00:55:28.817 | DEBUG    | pipecat.workers.runner:run:273 - WorkerRunner 'runner-1674c732': started running
+2026-10-24 00:55:28.817 | DEBUG    | pipecat.workers.runner:add_workers:230 - WorkerRunner 'runner-1674c732': added worker 'PipelineTask#1'
+2026-10-24 00:55:28.819 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is checking, connection is connecting
+2026-10-24 00:55:28.819 | DEBUG    | pipecat.transports.smallwebrtc.connection:_monitoring_connecting_state:607 - Monitoring connecting state
+2026-10-24 00:55:28.820 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connecting
+2026-10-24 00:55:28.821 | DEBUG    | pipecat.workers.runner:_start_worker:459 - WorkerRunner 'runner-1674c732': starting worker 'PipelineTask#1'
+2026-10-24 00:55:28.826 | INFO     | pipecat.transports.smallwebrtc.transport:connect:544 - Connecting to Small WebRTC
+2026-10-24 00:55:28.827 | DEBUG    | pipecat.services.deepgram.stt:_connect:630 - Connecting to Deepgram
+2026-10-24 00:55:28.828 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 00:55:28.829 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1309 - PipelineTask#1: Starting. Waiting for StartFrame#1 to reach the end of the pipeline...
+2026-10-24 00:55:28.995 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is completed, connection is connecting
+2026-10-24 00:55:29.012 | DEBUG    | pipecat.transports.smallwebrtc.connection:_cancel_monitoring_connecting_state:627 - Cancelling the connecting timeout task
+2026-10-24 00:55:29.012 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connected
+2026-10-24 00:55:29.013 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_connected:270 - Peer connection established.
+2026-10-24 00:55:29.013 | WARNING  | pipecat.transports.smallwebrtc.connection:video_input_track:746 - No video transceiver is available
+2026-10-24 00:55:29.014 | WARNING  | pipecat.transports.smallwebrtc.connection:screen_video_input_track:768 - No screen video transceiver is available
+2026-10-24 00:55:29.015 | DEBUG    | pipecat.transports.smallwebrtc.connection:replace_audio_track:522 - Replacing audio track audio
+2026-10-24 00:55:30.098 | DEBUG    | pipecat.services.deepgram.stt:_connection_handler:677 - DeepgramSTTService#1: Websocket connection initialized
+2026-10-24 00:55:30.148 | DEBUG    | pipecat.registry.registry:register:132 - Worker 'PipelineTask#1' ready (local)
+2026-10-24 00:55:30.149 | DEBUG    | pipecat.workers.runner:_send_registry:511 - WorkerRunner 'runner-1674c732': broadcasting registry: ['PipelineTask#1']
+2026-10-24 00:55:30.150 | DEBUG    | pipecat.workers.base_worker:_maybe_activate:1284 - Worker 'PipelineTask#1': activated
+2026-10-24 00:55:30.152 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1326 - PipelineTask#1: StartFrame#1 reached the end of the pipeline, pipeline is now ready.
+2026-10-24 00:55:30.164 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:32.459 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:32.460 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:36.326 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:36.337 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:36.485 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:36.486 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:37.445 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:37.446 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:37.886 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:37.887 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:55:39.015 | WARNING  | pipecat.transports.smallwebrtc.connection:timeout_handler:648 - Data channel not established within 10s after connection. Clearing message queue and disabling future queueing.
+2026-10-24 00:55:55.925 | WARNING  | pipecat.transports.smallwebrtc.transport:read_audio_frame:453 - Media stream error while reading the audio; clearing track.
+2026-10-24 00:55:55.926 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_ended:416 - Track audio ended
+2026-10-24 00:55:55.938 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is closed, connection is closed
+2026-10-24 00:55:55.939 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: closed
+2026-10-24 00:55:55.939 | INFO     | pipecat.transports.smallwebrtc.request_handler:handle_disconnected:212 - Discarding peer connection for pc_id: SmallWebRTCConnection#1-d6b6c94630b842ad872fc37285c51153
+2026-10-24 00:55:55.940 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_closed:280 - Client connection closed.
+2026-10-24 00:55:59.091 | DEBUG    | pipecat.transports.smallwebrtc.connection:_idle_watcher:224 - Disabling receiver for audio track after 3.17s idle
+2026-10-24 00:55:59.092 | DEBUG    | pipecat.transports.smallwebrtc.connection:discard_old_frames:193 - Discarding old frames
+2026-10-24 00:55:59.174 | DEBUG    | pipecat.transports.smallwebrtc.connection:_initialize:332 - Initializing new peer connection
+2026-10-24 00:55:59.177 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:429 - Creating answer
+2026-10-24 00:55:59.179 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_track:411 - Track audio received
+2026-10-24 00:55:59.200 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is gathering
+2026-10-24 00:55:59.205 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is complete
+2026-10-24 00:55:59.206 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:432 - Setting the answer after the local description is created
+2026-10-24 00:56:00.596 | DEBUG    | pipecat.services.groq.llm:create_client:104 - Creating Groq client with api https://api.groq.com/openai/v1
+2026-10-24 00:56:02.030 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#4::Source -> SmallWebRTCInputTransport#2
+2026-10-24 00:56:02.030 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCInputTransport#2 -> DeepgramSTTService#2
+2026-10-24 00:56:02.031 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking DeepgramSTTService#2 -> GroqLLMService#2
+2026-10-24 00:56:02.032 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking GroqLLMService#2 -> CartesiaTTSService#2
+2026-10-24 00:56:02.032 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking CartesiaTTSService#2 -> SmallWebRTCOutputTransport#2
+2026-10-24 00:56:02.033 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCOutputTransport#2 -> Pipeline#4::Sink
+2026-10-24 00:56:02.035 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking PipelineTask#2::Source -> RTVIProcessor#2
+2026-10-24 00:56:02.035 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking RTVIProcessor#2 -> Pipeline#4
+2026-10-24 00:56:02.036 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#4 -> PipelineTask#2::Sink
+2026-10-24 00:56:02.037 | WARNING  | pipecat.utils.base_object:add_event_handler:209 - PipelineTask#2: event handler on_stop_task not registered
+2026-10-24 00:56:02.037 | DEBUG    | pipecat.transports.smallwebrtc.request_handler:handle_web_request:218 - webrtc_connection_callback executed successfully for peer: SmallWebRTCConnection#2-90ebf8f6479c4524a2c58f337fa6dbd1
+2026-10-24 00:56:02.042 | DEBUG    | pipecat.workers.runner:run:273 - WorkerRunner 'runner-43524bef': started running
+2026-10-24 00:56:02.042 | DEBUG    | pipecat.workers.runner:add_workers:230 - WorkerRunner 'runner-43524bef': added worker 'PipelineTask#2'
+2026-10-24 00:56:02.059 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is checking, connection is connecting
+2026-10-24 00:56:02.060 | DEBUG    | pipecat.transports.smallwebrtc.connection:_monitoring_connecting_state:607 - Monitoring connecting state
+2026-10-24 00:56:02.061 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connecting
+2026-10-24 00:56:02.062 | DEBUG    | pipecat.workers.runner:_start_worker:459 - WorkerRunner 'runner-43524bef': starting worker 'PipelineTask#2'
+2026-10-24 00:56:02.065 | INFO     | pipecat.transports.smallwebrtc.transport:connect:544 - Connecting to Small WebRTC
+2026-10-24 00:56:02.065 | DEBUG    | pipecat.services.deepgram.stt:_connect:630 - Connecting to Deepgram
+2026-10-24 00:56:02.065 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 00:56:02.066 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1309 - PipelineTask#2: Starting. Waiting for StartFrame#2 to reach the end of the pipeline...
+2026-10-24 00:56:02.313 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is completed, connection is connecting
+2026-10-24 00:56:02.320 | DEBUG    | pipecat.transports.smallwebrtc.connection:_cancel_monitoring_connecting_state:627 - Cancelling the connecting timeout task
+2026-10-24 00:56:02.321 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connected
+2026-10-24 00:56:02.322 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_connected:270 - Peer connection established.
+2026-10-24 00:56:02.323 | WARNING  | pipecat.transports.smallwebrtc.connection:video_input_track:746 - No video transceiver is available
+2026-10-24 00:56:02.323 | WARNING  | pipecat.transports.smallwebrtc.connection:screen_video_input_track:768 - No screen video transceiver is available
+2026-10-24 00:56:02.324 | DEBUG    | pipecat.transports.smallwebrtc.connection:replace_audio_track:522 - Replacing audio track audio
+2026-10-24 00:56:03.361 | DEBUG    | pipecat.services.deepgram.stt:_connection_handler:677 - DeepgramSTTService#2: Websocket connection initialized
+2026-10-24 00:56:03.384 | DEBUG    | pipecat.registry.registry:register:132 - Worker 'PipelineTask#2' ready (local)
+2026-10-24 00:56:03.385 | DEBUG    | pipecat.workers.runner:_send_registry:511 - WorkerRunner 'runner-43524bef': broadcasting registry: ['PipelineTask#2']
+2026-10-24 00:56:03.385 | DEBUG    | pipecat.workers.base_worker:_maybe_activate:1284 - Worker 'PipelineTask#2': activated
+2026-10-24 00:56:03.387 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1326 - PipelineTask#2: StartFrame#2 reached the end of the pipeline, pipeline is now ready.
+2026-10-24 00:56:03.402 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:56:04.188 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:56:04.189 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:56:04.338 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:56:04.340 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 00:56:12.326 | WARNING  | pipecat.transports.smallwebrtc.connection:timeout_handler:648 - Data channel not established within 10s after connection. Clearing message queue and disabling future queueing.
+2026-10-24 01:00:15.692 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#0 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:00:15.693 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:00:17.682 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1755 - Idle timeout detected.
+2026-10-24 01:00:17.683 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1760 - Idle pipeline detected, cancelling pipeline worker...
+2026-10-24 01:00:17.683 | DEBUG    | pipecat.pipeline.worker:_cancel:1170 - Cancelling pipeline worker PipelineTask#0
+2026-10-24 01:00:17.684 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1763 - ...and cancelling the runner.
+2026-10-24 01:00:17.685 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_end:1346 - PipelineTask#0: Closing. Waiting for CancelFrame#0(reason: idle timeout) to reach the end of the pipeline...
+2026-10-24 01:00:17.686 | DEBUG    | pipecat.workers.runner:cancel:356 - WorkerRunner 'runner-797e209a': cancelling (reason=idle timeout)
+2026-10-24 01:00:17.687 | DEBUG    | pipecat.pipeline.worker:_handle_worker_cancel:1502 - Worker 'PipelineTask#0': received cancel
+2026-10-24 01:00:17.689 | DEBUG    | pipecat.services.deepgram.stt:_disconnect:640 - DeepgramSTTService#0: Disconnecting from Deepgram
+2026-10-24 01:00:18.027 | DEBUG    | pipecat.services.cartesia.tts:_disconnect_websocket:638 - CartesiaTTSService#0: Disconnecting from Cartesia
+2026-10-24 01:00:18.069 | DEBUG    | pipecat.pipeline.worker:wait_for_cancel:1337 - PipelineTask#0: CancelFrame#0(reason: idle timeout) reached the end of the pipeline.
+2026-10-24 01:00:18.070 | DEBUG    | pipecat.utils.base_object:cleanup:179 - PipelineTask#0: waiting on event handlers to finish ['on_pipeline_finished']...
+2026-10-24 01:00:18.072 | DEBUG    | pipecat.pipeline.worker:run:909 - Pipeline worker PipelineTask#0 is finishing...
+2026-10-24 01:00:18.072 | DEBUG    | pipecat.pipeline.worker:run:914 - Pipeline worker PipelineTask#0 has finished
+2026-10-24 01:00:18.073 | DEBUG    | pipecat.workers.runner:run:316 - WorkerRunner 'runner-797e209a': finished running
+2026-10-24 01:00:29.206 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#1 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:00:29.207 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:00:43.302 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1755 - Idle timeout detected.
+2026-10-24 01:00:43.311 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1760 - Idle pipeline detected, cancelling pipeline worker...
+2026-10-24 01:00:43.311 | DEBUG    | pipecat.pipeline.worker:_cancel:1170 - Cancelling pipeline worker PipelineTask#1
+2026-10-24 01:00:43.312 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1763 - ...and cancelling the runner.
+2026-10-24 01:00:43.313 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_end:1346 - PipelineTask#1: Closing. Waiting for CancelFrame#1(reason: idle timeout) to reach the end of the pipeline...
+2026-10-24 01:00:43.315 | DEBUG    | pipecat.workers.runner:cancel:356 - WorkerRunner 'runner-1674c732': cancelling (reason=idle timeout)
+2026-10-24 01:00:43.317 | DEBUG    | pipecat.pipeline.worker:_handle_worker_cancel:1502 - Worker 'PipelineTask#1': received cancel
+2026-10-24 01:00:43.350 | DEBUG    | pipecat.services.deepgram.stt:_disconnect:640 - DeepgramSTTService#1: Disconnecting from Deepgram
+2026-10-24 01:00:43.680 | DEBUG    | pipecat.services.cartesia.tts:_disconnect_websocket:638 - CartesiaTTSService#1: Disconnecting from Cartesia
+2026-10-24 01:00:43.729 | DEBUG    | pipecat.pipeline.worker:wait_for_cancel:1337 - PipelineTask#1: CancelFrame#1(reason: idle timeout) reached the end of the pipeline.
+2026-10-24 01:00:43.730 | DEBUG    | pipecat.utils.base_object:cleanup:179 - PipelineTask#1: waiting on event handlers to finish ['on_pipeline_finished']...
+2026-10-24 01:00:43.742 | DEBUG    | pipecat.pipeline.worker:run:909 - Pipeline worker PipelineTask#1 is finishing...
+2026-10-24 01:00:43.744 | DEBUG    | pipecat.pipeline.worker:run:914 - Pipeline worker PipelineTask#1 has finished
+2026-10-24 01:00:43.746 | DEBUG    | pipecat.workers.runner:run:316 - WorkerRunner 'runner-1674c732': finished running
+2026-10-24 01:01:02.417 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#2 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:01:02.418 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:01:04.338 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1755 - Idle timeout detected.
+2026-10-24 01:01:04.339 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1760 - Idle pipeline detected, cancelling pipeline worker...
+2026-10-24 01:01:04.340 | DEBUG    | pipecat.pipeline.worker:_cancel:1170 - Cancelling pipeline worker PipelineTask#2
+2026-10-24 01:01:04.341 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1763 - ...and cancelling the runner.
+2026-10-24 01:01:04.342 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_end:1346 - PipelineTask#2: Closing. Waiting for CancelFrame#2(reason: idle timeout) to reach the end of the pipeline...
+2026-10-24 01:01:04.343 | DEBUG    | pipecat.workers.runner:cancel:356 - WorkerRunner 'runner-43524bef': cancelling (reason=idle timeout)
+2026-10-24 01:01:04.345 | DEBUG    | pipecat.pipeline.worker:_handle_worker_cancel:1502 - Worker 'PipelineTask#2': received cancel
+2026-10-24 01:01:04.348 | DEBUG    | pipecat.services.deepgram.stt:_disconnect:640 - DeepgramSTTService#2: Disconnecting from Deepgram
+2026-10-24 01:01:04.615 | DEBUG    | pipecat.services.cartesia.tts:_disconnect_websocket:638 - CartesiaTTSService#2: Disconnecting from Cartesia
+2026-10-24 01:01:04.662 | INFO     | pipecat.transports.smallwebrtc.transport:disconnect:551 - Disconnecting to Small WebRTC
+2026-10-24 01:01:04.664 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_ended:416 - Track audio ended
+2026-10-24 01:01:04.666 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is closed, connection is closed
+2026-10-24 01:01:04.667 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: closed
+2026-10-24 01:01:04.667 | INFO     | pipecat.transports.smallwebrtc.request_handler:handle_disconnected:212 - Discarding peer connection for pc_id: SmallWebRTCConnection#2-90ebf8f6479c4524a2c58f337fa6dbd1
+2026-10-24 01:01:04.669 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_closed:280 - Client connection closed.
+2026-10-24 01:01:04.673 | DEBUG    | pipecat.pipeline.worker:wait_for_cancel:1337 - PipelineTask#2: CancelFrame#2(reason: idle timeout) reached the end of the pipeline.
+2026-10-24 01:01:04.674 | DEBUG    | pipecat.utils.base_object:cleanup:179 - PipelineTask#2: waiting on event handlers to finish ['on_pipeline_finished']...
+2026-10-24 01:01:04.676 | DEBUG    | pipecat.pipeline.worker:run:909 - Pipeline worker PipelineTask#2 is finishing...
+2026-10-24 01:01:04.677 | DEBUG    | pipecat.pipeline.worker:run:914 - Pipeline worker PipelineTask#2 has finished
+2026-10-24 01:01:04.678 | DEBUG    | pipecat.workers.runner:run:316 - WorkerRunner 'runner-43524bef': finished running
+2026-10-24 01:03:03.928 | DEBUG    | pipecat.transports.smallwebrtc.connection:_initialize:332 - Initializing new peer connection
+2026-10-24 01:03:03.935 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:429 - Creating answer
+2026-10-24 01:03:03.937 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_track:411 - Track audio received
+2026-10-24 01:03:03.958 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is gathering
+2026-10-24 01:03:03.967 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_icegatheringstatechange:407 - ICE gathering state is complete
+2026-10-24 01:03:03.968 | DEBUG    | pipecat.transports.smallwebrtc.connection:_create_answer:432 - Setting the answer after the local description is created
+2026-10-24 01:03:05.633 | DEBUG    | pipecat.services.groq.llm:create_client:104 - Creating Groq client with api https://api.groq.com/openai/v1
+2026-10-24 01:03:06.994 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#6::Source -> SmallWebRTCInputTransport#3
+2026-10-24 01:03:06.995 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCInputTransport#3 -> DeepgramSTTService#3
+2026-10-24 01:03:06.995 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking DeepgramSTTService#3 -> GroqLLMService#3
+2026-10-24 01:03:06.996 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking GroqLLMService#3 -> CartesiaTTSService#3
+2026-10-24 01:03:06.997 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking CartesiaTTSService#3 -> SmallWebRTCOutputTransport#3
+2026-10-24 01:03:07.000 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking SmallWebRTCOutputTransport#3 -> Pipeline#6::Sink
+2026-10-24 01:03:07.002 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking PipelineTask#3::Source -> RTVIProcessor#3
+2026-10-24 01:03:07.003 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking RTVIProcessor#3 -> Pipeline#6
+2026-10-24 01:03:07.004 | DEBUG    | pipecat.processors.frame_processor:link:696 - Linking Pipeline#6 -> PipelineTask#3::Sink
+2026-10-24 01:03:07.005 | WARNING  | pipecat.utils.base_object:add_event_handler:209 - PipelineTask#3: event handler on_stop_task not registered
+2026-10-24 01:03:07.005 | DEBUG    | pipecat.transports.smallwebrtc.request_handler:handle_web_request:218 - webrtc_connection_callback executed successfully for peer: SmallWebRTCConnection#3-cf1de95f83f84a00a2b7f2d47d8fc54d
+2026-10-24 01:03:07.012 | DEBUG    | pipecat.workers.runner:run:273 - WorkerRunner 'runner-59b0859e': started running
+2026-10-24 01:03:07.023 | DEBUG    | pipecat.workers.runner:add_workers:230 - WorkerRunner 'runner-59b0859e': added worker 'PipelineTask#3'
+2026-10-24 01:03:07.025 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is checking, connection is connecting
+2026-10-24 01:03:07.028 | DEBUG    | pipecat.transports.smallwebrtc.connection:_monitoring_connecting_state:607 - Monitoring connecting state
+2026-10-24 01:03:07.029 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connecting
+2026-10-24 01:03:07.030 | DEBUG    | pipecat.workers.runner:_start_worker:459 - WorkerRunner 'runner-59b0859e': starting worker 'PipelineTask#3'
+2026-10-24 01:03:07.036 | INFO     | pipecat.transports.smallwebrtc.transport:connect:544 - Connecting to Small WebRTC
+2026-10-24 01:03:07.037 | DEBUG    | pipecat.services.deepgram.stt:_connect:630 - Connecting to Deepgram
+2026-10-24 01:03:07.038 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:03:07.040 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1309 - PipelineTask#3: Starting. Waiting for StartFrame#3 to reach the end of the pipeline...
+2026-10-24 01:03:07.152 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is completed, connection is connecting
+2026-10-24 01:03:07.160 | DEBUG    | pipecat.transports.smallwebrtc.connection:_cancel_monitoring_connecting_state:627 - Cancelling the connecting timeout task
+2026-10-24 01:03:07.161 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: connected
+2026-10-24 01:03:07.162 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_connected:270 - Peer connection established.
+2026-10-24 01:03:07.162 | WARNING  | pipecat.transports.smallwebrtc.connection:video_input_track:746 - No video transceiver is available
+2026-10-24 01:03:07.163 | WARNING  | pipecat.transports.smallwebrtc.connection:screen_video_input_track:768 - No screen video transceiver is available
+2026-10-24 01:03:07.164 | DEBUG    | pipecat.transports.smallwebrtc.connection:replace_audio_track:522 - Replacing audio track audio
+2026-10-24 01:03:08.260 | DEBUG    | pipecat.services.deepgram.stt:_connection_handler:677 - DeepgramSTTService#3: Websocket connection initialized
+2026-10-24 01:03:08.327 | DEBUG    | pipecat.registry.registry:register:132 - Worker 'PipelineTask#3' ready (local)
+2026-10-24 01:03:08.328 | DEBUG    | pipecat.workers.runner:_send_registry:511 - WorkerRunner 'runner-59b0859e': broadcasting registry: ['PipelineTask#3']
+2026-10-24 01:03:08.328 | DEBUG    | pipecat.workers.base_worker:_maybe_activate:1284 - Worker 'PipelineTask#3': activated
+2026-10-24 01:03:08.330 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_start:1326 - PipelineTask#3: StartFrame#3 reached the end of the pipeline, pipeline is now ready.
+2026-10-24 01:03:08.351 | DEBUG    | pipecat.transports.smallwebrtc.connection:send_app_message:800 - Data channel not ready, queuing message
+2026-10-24 01:03:17.163 | WARNING  | pipecat.transports.smallwebrtc.connection:timeout_handler:648 - Data channel not established within 10s after connection. Clearing message queue and disabling future queueing.
+2026-10-24 01:08:07.673 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#3 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:08:07.674 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:13:08.260 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#3 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:13:08.261 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:18:08.841 | DEBUG    | pipecat.services.cartesia.tts:_receive_messages:770 - CartesiaTTSService#3 Cartesia connection was disconnected (timeout?), reconnecting
+2026-10-24 01:18:08.841 | DEBUG    | pipecat.services.cartesia.tts:_connect_websocket:618 - Connecting to Cartesia TTS
+2026-10-24 01:19:15.599 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1755 - Idle timeout detected.
+2026-10-24 01:19:15.602 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1760 - Idle pipeline detected, cancelling pipeline worker...
+2026-10-24 01:19:15.602 | DEBUG    | pipecat.pipeline.worker:_cancel:1170 - Cancelling pipeline worker PipelineTask#3
+2026-10-24 01:19:15.603 | WARNING  | pipecat.pipeline.worker:_idle_timeout_detected:1763 - ...and cancelling the runner.
+2026-10-24 01:19:15.604 | DEBUG    | pipecat.pipeline.worker:_wait_for_pipeline_end:1346 - PipelineTask#3: Closing. Waiting for CancelFrame#3(reason: idle timeout) to reach the end of the pipeline...
+2026-10-24 01:19:15.604 | DEBUG    | pipecat.workers.runner:cancel:356 - WorkerRunner 'runner-59b0859e': cancelling (reason=idle timeout)
+2026-10-24 01:19:15.605 | DEBUG    | pipecat.pipeline.worker:_handle_worker_cancel:1502 - Worker 'PipelineTask#3': received cancel
+2026-10-24 01:19:15.607 | DEBUG    | pipecat.services.deepgram.stt:_disconnect:640 - DeepgramSTTService#3: Disconnecting from Deepgram
+2026-10-24 01:19:15.887 | DEBUG    | pipecat.services.cartesia.tts:_disconnect_websocket:638 - CartesiaTTSService#3: Disconnecting from Cartesia
+2026-10-24 01:19:15.943 | INFO     | pipecat.transports.smallwebrtc.transport:disconnect:551 - Disconnecting to Small WebRTC
+2026-10-24 01:19:15.944 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_ended:416 - Track audio ended
+2026-10-24 01:19:15.948 | DEBUG    | pipecat.transports.smallwebrtc.connection:on_iceconnectionstatechange:401 - ICE connection state is closed, connection is closed
+2026-10-24 01:19:15.948 | DEBUG    | pipecat.transports.smallwebrtc.connection:_handle_new_connection_state:683 - Connection state changed to: closed
+2026-10-24 01:19:15.949 | INFO     | pipecat.transports.smallwebrtc.request_handler:handle_disconnected:212 - Discarding peer connection for pc_id: SmallWebRTCConnection#3-cf1de95f83f84a00a2b7f2d47d8fc54d
+2026-10-24 01:19:15.950 | DEBUG    | pipecat.transports.smallwebrtc.transport:on_closed:280 - Client connection closed.
+2026-10-24 01:19:15.952 | DEBUG    | pipecat.pipeline.worker:wait_for_cancel:1337 - PipelineTask#3: CancelFrame#3(reason: idle timeout) reached the end of the pipeline.
+2026-10-24 01:19:15.953 | DEBUG    | pipecat.utils.base_object:cleanup:179 - PipelineTask#3: waiting on event handlers to finish ['on_pipeline_finished']...
+2026-10-24 01:19:15.954 | DEBUG    | pipecat.pipeline.worker:run:909 - Pipeline worker PipelineTask#3 is finishing...
+2026-10-24 01:19:15.955 | DEBUG    | pipecat.pipeline.worker:run:914 - Pipeline worker PipelineTask#3 has finished
+2026-10-24 01:19:15.956 | DEBUG    | pipecat.workers.runner:run:316 - WorkerRunner 'runner-59b0859e': finished running
